@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HSBC Assignment HTML & CSS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        link: '#1E4AE9',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+    </style>
+</head>
+
+<body>
+    <div class="p-5 font-['Roboto']">
+        <img src="art.png" alt="art image" class="h-44 w-full object-cover rounded-3xl">
+        <section>
+            <h1>Welcome Back 👋</h1>
+            <p class="whitespace-pre-line">Today is a new day. It's your day. You shape it.
+                Sign in to start managing your projects.
+            </p>
+            <form action="">
+                <label>
+                    <span class="block text-sm font-medium text-slate-700">Email</span>
+                    <input type="email" class="border border-slate-300 w-full mt-1 rounded-xl p-2.5 px-4 bg-[#F3F7FB]"
+                        placeholder="Example@email.com" />
+                </label>
+                <label>
+                    <span class="block text-sm font-medium text-slate-700">Password</span>
+                    <input type="email" class="border border-slate-300 w-full mt-1 rounded-xl p-2.5 px-4 bg-[#F3F7FB]"
+                        placeholder="At least 8 characters" />
+                </label>
+                <a href="#" class="text-link block text-right">Forgot Password</a>
+                <button class="w-full bg-[#162D3A] text-white font-light p-2.5 rounded-xl">Sign In</button>
+                <p class="text-center">Don't you have an account? <a href="#" class="text-link">Sign up</a></p>
+            </form>
+            <p class="text-center text-sm">&copy; 2023 ALL RIGHTS RESERVED</p>
+        </section>
+    </div>
+</body>
+
+</html>

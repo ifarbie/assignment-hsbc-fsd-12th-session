@@ -12,6 +12,7 @@
                 extend: {
                     colors: {
                         link: '#1E4AE9',
+                        input: '#F3F7FB'
                     }
                 }
             }
@@ -23,30 +24,44 @@
 </head>
 
 <body>
-    <div class="p-5 font-['Roboto']">
-        <img src="art.png" alt="art image" class="h-44 w-full object-cover rounded-3xl">
-        <section>
-            <h1>Welcome Back 👋</h1>
-            <p class="whitespace-pre-line">Today is a new day. It's your day. You shape it.
-                Sign in to start managing your projects.
-            </p>
-            <form action="">
-                <label>
-                    <span class="block text-sm font-medium text-slate-700">Email</span>
-                    <input type="email" class="border border-slate-300 w-full mt-1 rounded-xl p-2.5 px-4 bg-[#F3F7FB]"
-                        placeholder="Example@email.com" />
-                </label>
-                <label>
-                    <span class="block text-sm font-medium text-slate-700">Password</span>
-                    <input type="email" class="border border-slate-300 w-full mt-1 rounded-xl p-2.5 px-4 bg-[#F3F7FB]"
-                        placeholder="At least 8 characters" />
-                </label>
-                <a href="#" class="text-link block text-right">Forgot Password</a>
-                <button class="w-full bg-[#162D3A] text-white font-light p-2.5 rounded-xl">Sign In</button>
-                <p class="text-center">Don't you have an account? <a href="#" class="text-link">Sign up</a></p>
-            </form>
-            <p class="text-center text-sm">&copy; 2023 ALL RIGHTS RESERVED</p>
-        </section>
+    <div class="p-5 font-['Roboto'] flex flex-col gap-5 md:flex-row">
+        <div class="md:flex-1 md:order-last">
+            <header class="md:h-full">
+                <img src="art.png" alt="art image" class="h-44 w-full object-cover rounded-2xl md:h-full">
+            </header>
+        </div>
+        <div class="md:flex-1 md:m-auto">
+            <div class="md:max-w-[388px] md:mx-auto">
+                <main class="h-[548px] flex flex-col gap-5 md:gap-10">
+                    <div>
+                        <h1 class="font-semibold text-2xl mb-2">Welcome Back 👋</h1>
+                        <p class="whitespace-pre-line text-[15px]">Today is a new day. It's your day. You shape it.
+                            Sign in to start managing your projects.
+                        </p>
+                    </div>
+                    <form class="flex flex-col gap-4">
+                        <label>
+                            <span class="block text-sm font-medium text-slate-700">Email</span>
+                            <input type="email"
+                                class="border border-slate-300 w-full mt-1 rounded-xl p-2.5 px-4 bg-input"
+                                placeholder="Example@email.com" />
+                        </label>
+                        <label>
+                            <span class="block text-sm font-medium text-slate-700">Password</span>
+                            <input type="email"
+                                class="border border-slate-300 w-full mt-1 rounded-xl p-2.5 px-4 bg-input"
+                                placeholder="At least 8 characters" />
+                        </label>
+                        <a href="#" class="text-link block text-right text-sm">Forgot Password</a>
+                        <button class="w-full bg-[#162D3A] text-white font-light p-2.5 rounded-xl">Sign In</button>
+                    </form>
+                    <p class="text-center">Don't you have an account? <a href="#" class="text-link">Sign up</a></p>
+                </main>
+                <footer>
+                    <p class="text-center text-sm text-slate-500">&copy; 2023 ALL RIGHTS RESERVED</p>
+                </footer>
+            </div>
+        </div>
     </div>
 </body>
 
